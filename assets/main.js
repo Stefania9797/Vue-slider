@@ -11,11 +11,13 @@ const app = new Vue({
     },
     methods:{
         prev(){
+        //Click su freccia sx
             if(this.counter === 0){   
                 return this.counter = this.images.length -1
             }
             return this.counter -= 1
         },
+        //Click su freccia dx
         next(){
             if(this.counter === this.images.length -1){
                 return this.counter = 0

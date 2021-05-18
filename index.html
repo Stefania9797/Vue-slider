@@ -20,6 +20,9 @@
             <i class="fas fa-chevron-right"></i>
         </div>
         <div class="img_position">
+            <!-- Circle inseriti tramite ciclo v-for
+            la classe activeImg viene aggiunta solo quando index==counter
+            al click su circle, counter diventa = index, in modo da far corrispondere l'immagine -->
             <i class="fas fa-circle"
                 v-for="(image, index) in images"
                 v-bind:class="{activeImg:index==counter}"
