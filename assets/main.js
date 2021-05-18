@@ -23,6 +23,15 @@ const app = new Vue({
                 return this.counter = 0
             }
             return this.counter += 1
-        },
+        }
+    },
+    mounted(){
+        document.addEventListener("keyup",(event)=>{
+            if(event.key=="ArrowLeft"){
+                this.prev();
+            }else if(event.key=="ArrowRight"){
+                this.next()
+            }
+        })
     }
 })
