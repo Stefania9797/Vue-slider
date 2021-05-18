@@ -19,6 +19,13 @@
         <div class="next" @click="next">
             <i class="fas fa-chevron-right"></i>
         </div>
+        <div class="img_position">
+            <i class="fas fa-circle"
+                v-for="(image, index) in images"
+                v-bind:class="{activeImg:index==counter}"
+                @click="counter=index">
+            </i>
+        </div>
 
     </div>
     <!-- VUE -->
